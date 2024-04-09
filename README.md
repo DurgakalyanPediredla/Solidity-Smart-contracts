@@ -18,13 +18,6 @@ This repository contains a set of Solidity smart contracts for a decentralized f
 
 - **Chainlink Oracle**: The project relies on Chainlink's price feed to convert ETH to USD.
 
-## Setup Instructions
-
-1. Clone the repository.
-2. Install dependencies, including any required Solidity compiler version and development environment.
-3. Compile the smart contracts using the Solidity compiler.
-4. Deploy the contracts to your desired Ethereum network.
-
 ## Usage
 
 1. **Interacting with Fundme Contract**: Users can contribute funds, withdraw funds, and view current contributors.
@@ -33,24 +26,16 @@ This repository contains a set of Solidity smart contracts for a decentralized f
 
 ## Testing
 
-Testing instructions will be provided in future updates.
+These contracts have been tested in a sepolia testnet.
 
 ## License
 
 This project is licensed under the MIT License.
 
-## Contributing
-
-Contributions are welcome. Please refer to the CONTRIBUTING.md file for guidelines.
 
 ## Authors
 
-- [Your Name]
-- [Co-author's Name]
-
-## Contact
-
-For support or inquiries, please contact [email@example.com](mailto:email@example.com).
+- [Kalyan Pediredla]
 
 ## Acknowledgments
 
