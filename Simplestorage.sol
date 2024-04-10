@@ -1,33 +1,32 @@
 // SPDX-License-Identifier: MIT
-pragma solidity ^0.8.0;
 
-contract SimpleStorage{
+pragma solidity 0.8.7;
 
-    //if you don't give any number it will get initialized to zero.
+// pragma solidity ^0.8.0;
+// pragma solidity >=0.8.0 <0.9.0;
+
+contract SimpleStorage {
     uint256 favoriteNumber;
-
-    mapping(string=>uint256) public nametofavoriteNumber;
 
     struct People {
         uint256 favoriteNumber;
         string name;
     }
-    //uint256 public favoritenumberlist;
+    // uint256[] public anArray;
     People[] public people;
 
-    function store(uint256 _favoriteNumber) public virtual {
-        favoriteNumber=_favoriteNumber;
+    mapping(string => uint256) public nameToFavoriteNumber;
 
+    function store(uint256 _favoriteNumber) public {
+        favoriteNumber = _favoriteNumber;
     }
-    function retrieve() public view returns(uint256){
+
+    function retrieve() public view returns (uint256) {
         return favoriteNumber;
     }
-    //calldata, memory, storage
-    function addperson(string memory _name, uint256 _favoriteNumber) public {
+
+    function addPerson(string memory _name, uint256 _favoriteNumber) public {
         people.push(People(_favoriteNumber, _name));
-        nametofavoriteNumber[_name] =_favoriteNumber;
-
+        nameToFavoriteNumber[_name] = _favoriteNumber;
     }
-
-
 }
